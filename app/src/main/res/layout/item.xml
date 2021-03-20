@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/item_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:text="Rutina" />
+
+    <TextView
+        android:id="@+id/item_dificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:text="Dificultad"
+        android:layout_toRightOf="@id/item_nombre"/>
+
+    <TextView
+        android:id="@+id/item_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:textColor="#ffff"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:text="Descripción de la rutina para el ejercicio a agregar"
+        android:layout_below="@+id/item_nombre" />
+
+    <ImageView
+        android:id="@+id/item_imagen"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/item_descripcion"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_imagen"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        />
+
+    <ListView
+        android:id="@+id/item_listaejercicios"
+        android:layout_below="@+id/item_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="16sp"
+        android:textColor="#ffff" />
+
+</RelativeLayout>

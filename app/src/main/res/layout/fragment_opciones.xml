@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkest"
+    android:orientation="vertical"
+    tools:context=".vistas.HomeFragment">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Opciones"
+        android:textColor="#ffff"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/separador1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/titulo"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/editar_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separador1"
+        android:layout_margin="16dp"
+        android:onClick="editarPerfil"
+        android:text="Editar Perfil"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_cuenta"
+        android:layout_below="@id/separador1"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="350dp"/>
+
+
+    <View
+        android:id="@+id/separador2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/editar_perfil"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:id="@+id/Privacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separador2"
+        android:layout_margin="16dp"
+        android:text="Privacidad"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_privacidad"
+        android:layout_below="@id/separador2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="350dp"/>
+
+    <View
+        android:id="@+id/separador3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Privacidad"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:id="@+id/acerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separador3"
+        android:layout_margin="16dp"
+        android:text="Acerca de..."
+        android:onClick="acercaDe"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/icon_noti"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_ayuda"
+        android:layout_below="@id/separador3"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="350dp"/>
+
+    <View
+        android:id="@+id/separador4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/acerca"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/bt_salir"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separador4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:text="Cerrar Sesión"
+        android:onClick="cerrarSesion"
+        android:textAllCaps="false"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1077025093071",
+    "firebase_url": "https://bw4ever-3ce30.firebaseio.com",
+    "project_id": "bw4ever-3ce30",
+    "storage_bucket": "bw4ever-3ce30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077025093071:android:fdf48ec5ba381083fa8eba",
+        "android_client_info": {
+          "package_name": "com.example.bw4ever"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077025093071-0sg1b81jo5trpp3ign326dtmldb0tp11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr9v0rm1ZBY5i-If_FgnsKrnGWaO2TWeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077025093071-0sg1b81jo5trpp3ign326dtmldb0tp11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

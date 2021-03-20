@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/item_nombreparque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:text="Nombre" />
+
+    <ImageView
+        android:id="@+id/item_fotoparque"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/item_nombreparque"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/item_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:text="Dificultad"
+        android:layout_below="@id/item_nombreparque"
+        android:layout_toRightOf="@id/item_fotoparque"/>
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_fotoparque"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="6dp"/>
+
+</RelativeLayout>

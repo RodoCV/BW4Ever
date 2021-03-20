@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkest"
+    tools:context=".vistas.RutinasFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titulobuscarrutina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar Rutinas"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#ffff"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/txtnombre"
+            android:hint="Nombre de la rutina"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#80FFFFFF"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/titulobuscarrutina" />
+
+        <ImageButton
+            android:id="@+id/bt_buscar_rutina_nombre"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_buscar"
+            android:background="@color/colorAccent"
+            android:layout_toRightOf="@id/txtnombre"
+            android:layout_below="@id/titulobuscarrutina"/>
+
+        <ImageButton
+            android:id="@+id/bt_limpiar_rutinas"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_cancelar"
+            android:background="?android:selectableItemBackground"
+            android:layout_toLeftOf="@+id/bt_buscar_rutina_nombre"
+            android:layout_below="@+id/titulobuscarrutina"/>
+
+        <TextView
+            android:id="@+id/txtfiltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar por dificultad:"
+            android:textSize="24sp"
+            android:textColor="#ffff"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/txtnombre"/>
+
+        <Spinner
+            android:id="@+id/spinnerdificultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnombre"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/txtfiltro"
+            android:background="@color/colorPrimaryDark"
+            android:entries="@array/opciones"
+            android:popupBackground="@color/colorDarker" />
+
+        <Button
+            android:id="@+id/btncancelarfiltro"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="X"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:background="@color/colorAccent"
+            android:layout_toRightOf="@id/spinnerdificultad"
+            android:layout_below="@id/txtnombre"
+            android:layout_marginTop="22dp"
+             />
+
+        <View
+            android:id="@+id/separador1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtfiltro"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/titulolistrutina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listado de Rutinas"
+            android:textSize="30sp"
+            android:textColor="#ffff"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/separador1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/titulolistrutina">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkest"
+    tools:context=".vistas.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titulobuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:text="Buscar Parques:"
+            android:fontFamily="@font/marvel_bold"
+            android:textColor="#ffff"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/txt_buscarNombre"
+            android:hint="Nombre del Parque"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#80FFFFFF"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/titulobuscar" />
+
+
+        <ImageButton
+            android:id="@+id/bt_buscar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_buscar"
+            android:background="@color/colorAccent"
+            android:layout_toRightOf="@id/txt_buscarNombre"
+            android:layout_below="@id/titulobuscar"/>
+
+        <ImageButton
+            android:id="@+id/bt_limpiar_parques"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_cancelar"
+            android:background="?android:selectableItemBackground"
+            android:layout_toLeftOf="@id/bt_buscar"
+            android:layout_below="@id/titulobuscar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcparques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/bt_buscar">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/separador"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/rcparques"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/historial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/separador"
+            android:text="Historial de Rutinas:"
+            android:textColor="#ffff"
+            android:textSize="28sp" />
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_margin="16dp"
+            android:layout_below="@+id/historial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:checked="true" />
+        <TextView
+            android:id="@+id/e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/checkbox1"
+            android:layout_below="@id/historial"
+            android:layout_marginTop="16dp"
+            android:text="Flexiones - Series 5 "
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_margin="16dp"
+            android:layout_below="@+id/e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:checked="true" />
+        <TextView
+            android:id="@+id/e2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/checkbox1"
+            android:layout_below="@id/e1"
+            android:layout_marginTop="16dp"
+            android:text="Dominadas - Series 10 "
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
